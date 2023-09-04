@@ -1,4 +1,5 @@
 const CIRCLE = 50;
+const CIRCLE_DEGREE = 2;
 const POINT = 1;
 const RADIUS_DEGREE = 3;
 
@@ -21,7 +22,7 @@ class Circle {
 	}
 
 	cost() {
-		return this.r ** RADIUS_DEGREE + CIRCLE;
+		return this.r ** RADIUS_DEGREE;
 	}
 }
 
@@ -49,6 +50,8 @@ const computeScore = (circles, points) => {
 	for (const circle of circles) {
 		total -= circle.cost();
 	}
+
+	total -= (circles.length - 1)**CIRCLE_DEGREE * CIRCLE;
 
 	return total;
 }
