@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Interactive Plot</title>
+
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<script src="https://cdn.plot.ly/plotly-2.25.2.min.js" charset="utf-8"></script>
+
+		<script src='plot.js'></script>
+		<script src='score.js'></script>
+	</head>
+	<body>
+
+		<div id="container">
+			<div id="chart"></div>
+			<div class="input-group" id="data-input-div">
+				<span class="input-group-text">Points (x, y):<br />x1 y1<br />x2 y2<br />...</span>
+				<textarea class="form-control" rows="10" id="points-text-area"></textarea>
+				<span class="input-group-text"
+					>Circles (x, y, radius):<br />x1 y1 r1<br />x2 y2 r2<br />...</span
+				>
+				<textarea class="form-control" rows="10" id="circles-text-area"></textarea>
+			</div>
+			<button type="button" class="btn btn-outline-primary" id="submit-button">Calculate</button>
+			<h1 id='score-heading'></h1>
+		</div>
+
+
+		<script src="script.js"></script>
+	</body>
+</html>

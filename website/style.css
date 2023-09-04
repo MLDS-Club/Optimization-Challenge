@@ -1,0 +1,19 @@
+#container {
+	margin: 0 auto;
+	width: 80vw;
+}
+
+#submit-button {
+	margin-top: 10px;
+}
+
+#chart {
+	height: 50vh;
+	width: 50vw;
+	margin: 0 auto;
+}
+
+h1 {
+	margin-top: 10px;
+	text-align: center;
+}
